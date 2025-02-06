@@ -1,0 +1,11 @@
+Prime finder program for the third assignment of my third year programming class COS3711
+
+How to build: Loading the CMakeLists.txt into Qt creator loads the project into Qt. The project is then able to be built and run.
+
+Program explenation:
+	-User chooses a range to search prime numbers (numbers in the range are excluded, ie. 0-100 will search 1-99 for primes)
+	-User choose number of threads to use (1-4)
+	-Numbers are divided between threads for calculation
+	-Primes found are displayed in tables showing which thread found which primes
+	-If the tables contain results, they are cleared when start is pressed
+	-Threads are terminated by the destructor so no errors occur during program termination
